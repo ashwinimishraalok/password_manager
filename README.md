@@ -1,2 +1,4 @@
 # jetty-hello-world
-Quickstart maven project for jetty-based applications
+
+Run as `mvn jetty:run` and visit `http://localhost:8080/hello`
+
