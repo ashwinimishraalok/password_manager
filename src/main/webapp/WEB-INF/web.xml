@@ -5,11 +5,35 @@
    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" 
    version="2.5">
   <servlet>
-    <servlet-name>HelloWorld</servlet-name>
-    <servlet-class>example.HelloWorldServlet</servlet-class>
+    <servlet-name>RegisterUser</servlet-name>
+    <servlet-class>password.manager.RegisterUser</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>HelloWorld</servlet-name>
-    <url-pattern>/hello/*</url-pattern>
+    <servlet-name>RegisterUser</servlet-name>
+    <url-pattern>/app/user</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>LoginUser</servlet-name>
+    <servlet-class>password.manager.LoginUser</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginUser</servlet-name>
+    <url-pattern>/app/user/auth</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ListSites</servlet-name>
+    <servlet-class>password.manager.ListSites</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListSites</servlet-name>
+    <url-pattern>/app/sites/list/</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>StoreSite</servlet-name>
+    <servlet-class>password.manager.StoreSite</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StoreSite</servlet-name>
+    <url-pattern>/app/sites/</url-pattern>
   </servlet-mapping>
 </web-app>
